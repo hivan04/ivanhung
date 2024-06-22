@@ -1,0 +1,284 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.logobox {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*timeline*/
+.timeline {
+    margin: 0;
+    padding: 2em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0.3rem;
+    font-size: 3em;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+}
+
+.title {
+    text-align:center;
+}
+
+.title p1 {
+    color: #ac65b3;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+.timeline {
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.event {
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+
+}
+
+.event div {
+    border: 2px solid #131313;
+    border-radius: 1em;
+    padding: 1.5em;
+
+}
+
+.event p {
+    line-height: 27px;
+    color: #131313;
+}
+
+.event:nth-child(odd) {
+    border-left: 3px solid #131313;
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+
+.event:nth-child(even) {
+    border-right: 3px solid #131313;
+    padding-right: 3em;
+    transform: translateX(-17em);
+}
+
+.event:nth-child(odd)::before,
+.event:nth-child(even)::before {
+    content: '';
+    background: #131313;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+.event:nth-child(odd)::before {
+    left: 0;
+}
+.event:nth-child(even)::before {
+    right: 0;
+}
+
+.event:nth-child(odd)::before,
+.event:nth-child(even)::before {
+    content: '';
+    background: #131313;
+    box-shadow: 0 0 0.5em #0d71fc;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;   
+}
+
+.event:nth-child(odd) div::before {
+left: -0.5em;
+}
+
+.event:nth-child(even) div::before {
+    right: -0.01em;
+    }
+
+/*FIX THE MOBILE VIEW

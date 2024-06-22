@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+        <div id="logo">
+            <a class="logo" href="index.html">Ivan Hung</a>
+        </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div id="logo">
+            <a class="logo" href="index.html">Ivan Hung</a>
+        </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="timeline.html" onclick="toggleMenu()">Timeline</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/ivanhungcir.png" alt="Ivan Hung profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ivan Hung</h1>
+        <p class="section__text__p2">Final Year EcoFin Student, Founder of cohesiv.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedinn.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/hivan04/"
+          />
+          <img
+            src="./assets/YouTube.png"
+            alt="My YouTube channel"
+            class="icon"
+            onclick="location.href='https://www.youtube.com/@hivan04/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/2022ivan.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years of Financial Experience</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/hat.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BSc Economics and Finance</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            Currently completing a degree in BSc Economics and Finance from UEA. I have been recognised with multiple scholarships and awards 
+            for my outstanding academic performance and contributions to the School of ECO @UEA.
+            As a tri-cultural individual: born in the USA, raised in the UK, and originally from Hong Kong, I continue to seek ways to blend these diverse
+            cultures, bringing together the best aspects of each.
+              <br /><br />
+            With a strong passion for Quantiative Economics, Macroeconomics, Finance and Data Science, I am keen to apply theoretical concepts to areas
+            such as Credit Risk & Research, Debt Capital Markets (DCM), Private Equity, Wealth & Asset Mangement and Applied Data Analyst roles.
+              <br /><br />
+            I thrive in high-pressured environments and always very realistic with time manegement to ensure quality production, whilst not providing false hopes.
+            Passion in ESG is also reflected in my work as I write all my notes digitally to prevent the further worsening of deforestation and I keep my work 
+            to a high and integral standard.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/1f.webp"
+                  alt="Project 1"
+                  class="project-img"
+                />
+                <img
+                src="./assets/2f.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+              </div>
+              <h2 class="experience-sub-title project-title">TSM from Scratch!</h2>
+              <div class="btn-container">
+                <a href="./assets/ThreeIncomeStatementfromScratch-IvanHung.xlsx" download='IH Three Statement model from scratch' 
+                class="download-btn">Download
+                    <i class="fa fa-download"></i>
+                </a>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/libftem.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Award Winning Journal!</h2>
+              <div class="btn-container">
+                <a href="./assets/libfdoc.pdf" download='2019 LIBF Overall Winner Report' 
+                class="download-btn">Download
+                    <i class="fa fa-download"></i>
+                </a>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/metrict.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Econometrics II Project!</h2>
+              <div class="btn-container">
+                <a href="./assets/metricdociia.pdf" download='Econometrics II Project' 
+                class="download-btn">Download
+                    <i class="fa fa-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+        <div class="article-container">
+            <button class="btn btn-color-2 project-btn"
+            onclick="location.href='projects.html'">
+             All Projects
+            </button>
+        </div>
+      </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">hungivan04@gmail.com
+          </a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">Connect with me :)</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Ivan Hung. </p>
+      <p>Based in the UK and HK 📍</p>
+      <div class="logobox"><img src="/assets/personallogo.png" alt="bottomlogo" class="center"></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
