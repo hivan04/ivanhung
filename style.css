@@ -54,7 +54,6 @@ a {
 a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -449,6 +448,18 @@ footer p {
     margin-right: auto;
 }
 
+/*projects*/
+text-center {
+  text-align: center;
+}
+
+container {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 25px;
+  max-width: 500px;
+
+}
 /*timeline*/
 .timeline {
     margin: 0;
