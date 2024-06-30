@@ -9,25 +9,23 @@
     <link rel="stylesheet" href="mediaqueries.css" />
 
     <style>
-        .img {
-            display:flex;
-            justify-content: space-around;
-            align-items: center;
-            max-width: 80px;
-            max-width: 80px;
-        }
 
+    .name {
+        color: black;
+        text-decoration: none;
+        text-decoration-color: white;
+    }
     </style>
   </head>
 
   <body>
     <nav id="desktop-nav">
         <div id="logo">
-            <a class="logo" href="index.html">Ivan Hung</a>
+            <a id="name" class="logo" href="index.html">Ivan Hung</a>
     </nav>
     <nav id="hamburger-nav">
         <div id="logo">
-            <a class="logo" href="index.html">Ivan Hung</a>
+            <a id="name" class="logo" href="index.html">Ivan Hung</a>
         </div>
     </nav>
     
@@ -51,7 +49,7 @@
             <br>
             <container id="img">
                 <img src="/assets/tea1.jpeg" width="200px" height="200px" style="aspect-ratio: 3/4;" loading="lazy">
-                <img src="/assets/tea2.jpeg" width="200px" height="200px" style="aspect-ratio: 3/4;">
+                <img src="/assets/tea2.jpeg" width="175px" height="200px" style="aspect-ratio: 3/4;">
                 <img src="/assets/tea3.jpeg" width="450px" height="200px" style="aspect-ratio: 3/4;">
                 <img src="/assets/tea4.jpeg" width="200px" height="200px" style="aspect-ratio: 3/4;">
             </container>
@@ -72,9 +70,11 @@
                 I was shortlisted! Despite not getting a spot, I have decided to journal this experience as it was the first time that I ever did an
                 interview for an internship in-person. 
             </p>   
+            <br>
             <p>
             Check out the presentation I made by clicking below!  
             </p>
+            <a class="button" href="oakpres.html">Click here to view the presentation!</a>
  
         </div>
         <br>
@@ -138,6 +138,7 @@
                  refresher to the topics I learn from my first year statistics module in preparation for my econometrics module 
                  next year! Download the presentation we came up with on consumer behaviour with the button below!
             </p>
+            <a class="button" href="./assets/lbg1.pptx">Click here to view the content from Day One! →</a>
             <p>‎</p>
             <h3>Lloyds Banking Group - Technology and Data Insight Day Two (15.08.23):</h3>
             <p>‎</p>
@@ -158,6 +159,7 @@
                 which allowed me to enhance my presentation, communication/teamwork and leadership skills whilst networking with some lovely people 
                 who were at different levels of University!  
             </p>
+            <a class="button" href="./assets/lbg2.zip">Click here to view the content from Day Two! →</a>
         </div>
         <br>
         <hr>
@@ -183,8 +185,9 @@
             </p>
             <p>‎</p>
             <p>
-                The following download is the ESG Report itself, hope you enjoy the read!   
+                The following link goes to the ESG Report itself, hope you enjoy the read!   
             </p>
+            <a class="button" href="esgrep.html">Click here to view the report!</a>
         </div>
         <br>
         <hr>
@@ -219,8 +222,28 @@
             </p>
         </div>
         <br>
-        <hr>
-        <br><br>
+        
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 2</div>
+      <img src="./assets/completion1.webp" style="width:200px; height:200px; text-align:centre;">
+      <div class="text" style="color: black;">Evidence of Completion</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="./assets/award1.webp" style="width:500px; height:200px; color;">
+      <div class="text" style="color: black;">Distinguished Performance Award (Worth £100)</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    </div>
+    <hr>
+    <br><br>
 
         <div class="event">
             <h2>New Role at the Oakwood Fund (16.05.23):</h2>
