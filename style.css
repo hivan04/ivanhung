@@ -480,3 +480,52 @@ container {
   max-width: 500px;
 }
 
+.picture {
+  max-width: 8rem;
+  max-height: 8rem;
+  text-align: center;
+  float: left;
+}
+
+/* Copied off of LinkedIn 'replica' tutorial
+/* Experience */
+.exp-item {
+  display: flex;
+  margin-top: 40px;
+}
+.org-img {
+  width: 100px;
+  height: 50px;
+  margin-right: 20px;
+}
+.org-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.role-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.role-org-name {
+  font-size: 14px;
+  color: #464646;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.role-duration {
+  font-size: 14px;
+  color: #464646;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.role-desc {
+  font-size: 14px;
+  color: #232323;
+  margin-bottom: 5px;
+} 
+.role-desc ul {
+  padding-left: 20px;
+}
