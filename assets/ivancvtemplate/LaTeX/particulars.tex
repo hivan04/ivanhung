@@ -1,0 +1,30 @@
+\input{utilities}
+\usepackage{blindtext}  
+\usepackage{lipsum}
+
+\def\lrand{\lipsum[-]}
+\def\firstname{Firstname}
+\def\lastname{Lastname}
+\def\bio{Mini title - what year you're in at uni?}
+\def\email{email}
+\def\linkedin{https://www.linkedin.com}
+\def\github{https://github.com}
+\def\jasphone{phone-number}
+\def\globe{personal website}
+
+% \def\jbegin{\begin{itemize}}
+% \def\jitem{\item }
+% \def\jend{\end{itemize}}
+\def\jbegin{\resumeItemListStart}
+\def\jitem{\resumeItem}
+\def\jend{\resumeItemListEnd}
+
+
+\def\achievements{
+    \jbegin
+        \jitem{\lrand[1]}
+        \jitem {\lrand[2]}
+        \jitem {\lrand[1]}
+        \jitem {\lrand[2]}
+    \jend
+}

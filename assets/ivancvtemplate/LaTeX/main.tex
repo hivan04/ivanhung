@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,1pt]{article}
+\input{particulars}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ebgaramond}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.8in}
+\addtolength{\evensidemargin}{-0.9in}
+\addtolength{\textwidth}{1.6in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{1.5in}
+
+
+
+\urlstyle{same}
+
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\describe}[2]{
+    \csname #1@#2\endcsname
+}
+
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\titlesection{
+\begin{center}
+    {\Huge \scshape \firstname \ \lastname} \\ \vspace{1pt}
+    {\small \scshape \bio} \\ 
+    \href{mailto:\email}{\raisebox{-0.2\height}\faEnvelope\  \underline{\email}} \\ 
+    \href{\linkedin}{\raisebox{-0.2\height}\faLinkedin\ \underline{\linkedin}}  
+    \href{\globe}{\raisebox{-0.2\height}\faGlobe\ \underline{\globe}}
+    \href{\github}{\raisebox{-0.2\height}\faGithub\ \underline{\github}}
+    \vspace{-18pt}
+\end{center}
+}
+
+\begin{document}
+\titlesection
+\begin{figure}[htbp]
+
+\end{figure}
+
+%%Education Section
+\section*{EDUCATION}
+\textbf{School 2}\\
+Subject
+\hfill \textit{(Jan. 2000 - Jan. 2000)}\\
+\vspace{0.1cm}
+$\Rightarrow$  \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$
+
+\vspace{0.3cm}
+\textbf {School 1}
+\hfill \textit{(Jan. 2000 - Jan. 2000)}\\
+\vspace{0.1cm}
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+
+%%Experience Section
+\section*{EXPERIENCE}
+{\textbf{Job 4} $-$ Company 4:}\hfill \textit{ (Jan. 2000 - Jan. 2000)}\\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+\vspace{0.2cm}
+
+{\textbf{Job 3} $-$ Company 3:}\hfill \textit{ (Jan. 2000 - Jan. 2000)}\\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+\vspace{0.2cm}
+
+{\textbf{Job 2} $-$ Company 2:} \hfill \textit{ (Jan. 2000 - Jan. 2000)}\\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+\vspace{0.2cm}
+
+{\textbf{Job 1} $-$ Company 1:} \hfill \textit{ (Jan. 2000 - Jan. 2000)}\\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+
+
+%%Volunteering Section
+\section*{VOLUNTEERING} 
+{\textbf{Volunteer Experience 2}} \hfill \textit{(July. 2020 - Current)}\\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+\vspace{0.2cm}
+
+{\textbf{Volunteer Experience 1}} \hfill \textit{(July. 2020 - Current)}\\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+
+
+\section*{RELEVANT SKILLS}
+\textbf{Skill 1:}\\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+\vspace{0.2cm}
+
+\textbf{Skill 2:}\\
+$\Rightarrow$ \\
+$\Rightarrow$ \\
+\vspace{0.2cm}
+
+\textbf{Skill 3:}\\
+$\Rightarrow$
+
+
+\end{document}
